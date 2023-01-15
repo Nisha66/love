@@ -1,0 +1,105 @@
+<!DOCTYPE HTML>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+	<title>Half-Girl_Friend</title>
+	<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+	<style type="text/css">
+		@font-face {
+			font-family: digit;
+			src: url('digital-7_mono.ttf') format("truetype");
+		}
+	</style>
+	<link href="css/default.css" type="text/css" rel="stylesheet">
+	<script type="text/javascript" src="js/jquery.js"></script>
+	<script type="text/javascript" src="js/garden.js"></script>
+    <script type="text/javascript" src="js/functions.js"></script>
+</head>
+
+<body>
+	<div id="mainDiv">
+		<div id="content">
+			<div id="code">
+				<span class="comments">/**</span><br />
+				<span class="space"/><span class="comments">* Hey Nisha, "From the moment I saw you,</span><br />
+				<span class="space"/><span class="comments">* I knew you were special. You have a way of making my heart skip a beat and my mind race with thoughts of you..</span><br />
+				<span class="space"/><span class="comments">*/</span><br />
+				I never knew <span class="keyword">what love was</span> until I met <span class="string">" you"..</span>:)<br />
+				Will you do me <span class="keyword">he honor of becoming </span> my partner<span class="string">for life and making all my </span>dreams come true?<br />
+				<span class="comments">// i like you very much, </span><br />
+				i know you don't know about me;<br />
+				<span class="comments">// i waiting for that moment when you finds me..</span><br />
+				i don't want to confess my love, because i dont know how much i love you?<br />
+				<span class="comments">//I don't know about you, and don't want to know your details from anyone except you </span><br />
+				i.miss(u);<br />
+				<span class="comments">// And take care of u...</span><br />
+				i.takeCareOf(u);<br />
+				<!-- <span class="comments">//.</span><br /> -->
+				<span class="comments">// So I am waiting for your reply and I have confidence that you will.</span><br />
+				<span class="keyword">True</span> Love Never<span class="keyword">Ends</span>;<br />
+				<!-- <span class="keyword">while</span> (isHesitate) {<br /> -->
+				<!-- <span class="placeholder"/>i.waitFor(u);<br />
+				<span class="placeholder"/><span class="comments">// I think it is an important decision</span><br /> -->
+				<!-- <span class="placeholder"/><span class="comments">// and you should think it over.</span><br /> -->
+				<!-- <span class="placeholder"/>isHesitate = u.thinkOver();<br />
+				}<br /> -->
+				<!-- <span class="comments">// After a romantic wedding, we will live happily ever after.</span><br /> -->
+				<!-- i.marry(u);<br />
+				i.liveHappilyWith(u);<br /> -->
+			</div>
+			<div id="loveHeart">
+				<canvas id="garden"></canvas>
+				<div id="words">
+					<div id="messages">
+						Nishita, I have fallen in love with you from
+						<div id="elapseClock"></div>
+					</div>
+					<div id="loveu">
+						Love u forever and ever.<br/>
+						<div class="signature">-- Bagha🐯 Group</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		
+	</div>
+	
+	<script type="text/javascript">
+		
+		
+		var offsetX = $("#loveHeart").width() / 2;
+		var offsetY = $("#loveHeart").height() / 2 - 55;
+		var together = new Date();
+		together.setFullYear(2022, 12, 6); <!--这里的月份要填写实际月份减1-->
+		together.setHours(24);
+		together.setMinutes(0);
+		together.setSeconds(0);
+		together.setMilliseconds(0);
+		
+		if (!document.createElement('canvas').getContext) {
+			var msg = document.createElement("div");
+			msg.id = "errorMsg";
+			msg.innerHTML = "Your browser doesn't support HTML5!<br/>Recommend use Chrome 14+/IE 9+/Firefox 7+/Safari 4+"; 
+			document.body.appendChild(msg);
+			$("#code").css("display", "none")
+			$("#copyright").css("position", "absolute");
+			$("#copyright").css("bottom", "10px");
+		    document.execCommand("stop");
+		} else {
+			setTimeout(function () {
+				startHeartAnimation();
+			}, 5000);
+
+			timeElapse(together);
+			setInterval(function () {
+				timeElapse(together);
+			}, 500);
+
+			adjustCodePosition();
+			$("#code").typewriter();
+		}
+		
+	</script>
+	
+	  
+</body>
+</html>
